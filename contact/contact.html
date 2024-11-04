@@ -12,8 +12,8 @@
     <script>
       function showAlert() {
         // Get the values from the input fields
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
+        const name = document.getElementById("Tryandaasu_name").value;
+        const email = document.getElementById("Tryandaasu_email").value;
 
         // Display the alert message with the input values
         alert(`Form submitted successfully!\nName: ${name}\nEmail: ${email}`);
@@ -24,10 +24,10 @@
     </script>
   </head>
   <body>
-    <header>
+    <header id="Tryandaasu_header">
       <h1>Contact Us</h1>
     </header>
-    <nav>
+    <nav id="Tryandaasu_nav">
       <a href="../index.html">Home</a>
       <a href="/about/about.html">About Us</a>
       <a href="/contact/contact.html">Contact Us</a>
@@ -35,7 +35,7 @@
       <a href="/faq/faq.html">FAQ</a>
       <a href="/terms/terms.html">Terms of Service</a>
     </nav>
-    <main>
+    <main id="Tryandaasu_main">
       <section>
         <h2>Get in Touch</h2>
         <p>
@@ -48,19 +48,24 @@
       <section>
         <h2>Contact Form</h2>
         <form action="#" method="POST">
-          <div class="form-group">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required />
+          <div class="Tryandaasu_form-group">
+            <label for="Tryandaasu_name">Your Name:</label>
+            <input type="text" id="Tryandaasu_name" name="name" required />
           </div>
 
-          <div class="form-group">
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required />
+          <div class="Tryandaasu_form-group">
+            <label for="Tryandaasu_email">Your Email:</label>
+            <input type="email" id="Tryandaasu_email" name="email" required />
           </div>
 
-          <div class="form-group">
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+          <div class="Tryandaasu_form-group">
+            <label for="Tryandaasu_message">Your Message:</label>
+            <textarea
+              id="Tryandaasu_message"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
           </div>
 
           <input type="submit" value="Submit" onclick="showAlert()" />
@@ -68,17 +73,60 @@
       </section>
 
       <section>
-        <h2>Contact Information</h2>
-        <p>
-          Email: <a href="mailto:support@example.com">support@example.com</a>
-        </p>
-        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-        <p>Follow us on social media!</p>
-        <a href="https://facebook.com">Facebook</a>
-        <a href="https://twitter.com">Twitter</a>
+        <h2 id="Tryandaasu_contact">Contact Information</h2>
+
+        <div class="Tryandaasu_contact-info">
+          <a href="https://twitter.com">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
+              />
+            </svg>
+          </a>
+  
+          <a href="https://twitter.com">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="M9.294 6.928L14.357 1h-1.2L8.762 6.147L5.25 1H1.2l5.31 7.784L1.2 15h1.2l4.642-5.436L10.751 15h4.05zM7.651 8.852l-.538-.775L2.832 1.91h1.843l3.454 4.977l.538.775l4.491 6.47h-1.843z"
+              />
+            </svg>
+          </a>
+  
+          <a href="https://twitter.com">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M5.856 6.84a.75.75 0 0 0-1.106.66V17a.75.75 0 0 0 1.5 0V8.756l5.394 2.904c.222.12.49.12.712 0l5.394-2.904V17a.75.75 0 0 0 1.5 0V7.5a.75.75 0 0 0-1.106-.66L12 10.148z"
+              />
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M17.31 3.722a59.6 59.6 0 0 0-10.62 0l-1.518.135a3.53 3.53 0 0 0-3.179 3.006a35.5 35.5 0 0 0 0 10.274a3.53 3.53 0 0 0 3.18 3.005l1.516.136c3.534.316 7.088.316 10.622 0l1.517-.136a3.53 3.53 0 0 0 3.179-3.005a35.5 35.5 0 0 0 0-10.274a3.53 3.53 0 0 0-3.18-3.006zM6.824 5.216a58 58 0 0 1 10.354 0l1.517.136a2.03 2.03 0 0 1 1.829 1.728a34 34 0 0 1 0 9.84a2.03 2.03 0 0 1-1.829 1.728l-1.517.136c-3.444.308-6.91.308-10.354 0l-1.517-.136a2.03 2.03 0 0 1-1.829-1.728a34 34 0 0 1 0-9.84a2.03 2.03 0 0 1 1.829-1.728z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
       </section>
     </main>
-    <footer>
+    <footer id="Tryandaasu_footer">
       <p>&copy; 2024 Online Message Sharing Platform</p>
     </footer>
   </body>
