@@ -1,0 +1,65 @@
+<!-- Nama  : Tryanda Anggita Suwito
+     NIM   : 2203010343
+     Kelas : J-22 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="/about/about.html">About Us</a>
+        <a href="/contact/contact.html">Contact Us</a>
+        <a href="/message/message.html">Message</a>
+        <a href="/faq/faq.html">FAQ</a>
+        <a href="/terms/terms.html">Terms of Service</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Common Questions</h2>
+            <div class="faq">
+                <div class="faq-question">What is this platform about?</div>
+                <div class="faq-answer">
+                    This platform is designed for users to share messages easily and effectively.
+                </div>
+
+                <div class="faq-question">How can I contact support?</div>
+                <div class="faq-answer">
+                    You can reach our support team through the Contact Us page or email us at support@example.com.
+                </div>
+
+                <div class="faq-question">Is my data secure?</div>
+                <div class="faq-answer">
+                    Yes, we take data security very seriously and implement various measures to protect your information.
+                </div>
+
+                <div class="faq-question">Can I delete my account?</div>
+                <div class="faq-answer">
+                    Yes, you can delete your account by visiting the Account Settings page.
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Online Message Sharing Platform</p>
+    </footer>
+
+    <script>
+        // JavaScript for toggling the visibility of FAQ answers
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
