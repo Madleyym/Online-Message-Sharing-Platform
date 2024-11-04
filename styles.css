@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* General Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #e8f5fc;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%; /* Allow full height for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  font-family: "Inter", sans-serif;
 }
 
-header {
-  background-color: #6294df; 
+#Tryandaasu_header {
+  background-color: #6294df;
   color: #fff;
   padding: 1.5rem;
   text-align: center;
@@ -24,47 +28,48 @@ h1 {
   margin: 0;
 }
 
-
-nav {
+#Tryandaasu_nav {
   display: flex;
   justify-content: center;
-  gap: 15px; 
-  margin: 1rem 0; 
+  gap: 15px;
+  margin: 1rem 0;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
-nav a {
+#Tryandaasu_nav a {
   display: inline-block;
-  background-color: #e8f5fc; 
-  color: #6294df; 
-  padding: 12px 25px; 
-  border-radius: 5px; 
+  background-color: #e8f5fc;
+  color: #6294df;
+  padding: 12px 15px; /* Adjust padding for better touch targets */
+  border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.1s ease;
+  text-decoration: none;
 }
 
-nav a:hover {
-  background-color: #d0e9f9; 
+#Tryandaasu_nav a:hover {
+  background-color: #d0e9f9;
 }
 
-nav a:active {
-  transform: scale(0.95); 
-  background-color: #b5d7f2; 
+#Tryandaasu_nav a:active {
+  transform: scale(0.95);
+  background-color: #b5d7f2;
 }
 
-main {
+#Tryandaasu_main {
   padding: 2rem;
 }
 
 section {
-  margin-bottom: 2rem; 
-  padding: 1rem; 
-  background-color: #fff; 
-  border-radius: 8px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 1.5rem; /* Reduced bottom margin */
+  padding: 1.5rem; /* Increased padding for better spacing */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  color: #6294df; 
-  margin-top: 1.5rem; 
+  color: #6294df;
+  margin-top: 1rem; /* Reduced margin top */
 }
 
 form {
@@ -72,19 +77,20 @@ form {
   flex-direction: column;
 }
 
-.form-group {
+.Tryandaasu_form-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
 }
 
-form Button, form input[type="submit"] {
-    padding: 8px 12px;
-    cursor: pointer;
-    background-color: #6294df;
-    color: #fff;
-    border-radius: 4px;
-    border: none;
+form button,
+form input[type="submit"] {
+  padding: 12px; /* Increased padding for easier tapping */
+  cursor: pointer;
+  background-color: #6294df;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
 }
 
 label {
@@ -95,33 +101,118 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-  padding: 0.5rem;
+  padding: 0.75rem; /* Increased padding */
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
 }
 
-
-footer {
-  background-color: #6294df; 
-  color: #fff; 
-  text-align: center; 
-  padding: 1rem; 
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+/* Restore the size of the textarea */
+textarea {
+  resize: vertical; /* Allow vertical resizing */
+  height: 100px; /* Set a default height */
 }
 
-footer a {
-  color: #fff; 
-  text-decoration: none; 
-  margin: 0 10px; 
+#Tryandaasu_footer {
+  background-color: #6294df;
+  color: #fff;
+  text-align: center; /* Ensure text is centered */
+  padding: 1rem;
+  position: relative; /* Footer position */
+  width: 100%; /* Ensure full width */
+  bottom: 0; /* Ensure it sticks to the bottom */
 }
 
-footer a:hover {
-  text-decoration: underline; 
+#Tryandaasu_footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#Tryandaasu_footer a:hover {
+  text-decoration: underline;
 }
 
 li {
   list-style-position: inside;
+}
+
+#Tryandaasu_contact {
+  text-align: center;
+}
+.Tryandaasu_contact-info {
+  display: flex;
+  font-size: 20px;
+  margin-top: 8px;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Decrease font size for mobile */
+  }
+
+  #Tryandaasu_nav {
+    flex-direction: column; /* Stack the navigation links */
+    align-items: center;
+    width: 100%; /* Make it full width */
+  }
+
+  #Tryandaasu_nav a {
+    width: 90%; /* Make navigation links full width on mobile */
+    text-align: center;
+    padding: 10px; /* Adjust padding */
+  }
+
+  #Tryandaasu_main {
+    padding: 1rem; /* Decrease padding on main */
+  }
+
+  section {
+    margin-bottom: 1rem; /* Decrease margin for sections */
+  }
+
+  form button,
+  form input[type="submit"] {
+    width: 100%; /* Make buttons full width */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 0.9rem; /* Decrease font size for input fields */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* Further decrease font size for very small screens */
+  }
+
+  h2 {
+    font-size: 1.25rem; /* Decrease section heading font size */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #Tryandaasu_footer {
+    font-size: 0.9rem; /* Decrease footer font size */
+    position: relative;
+    text-align: center;
+  }
+
+  #Tryandaasu_footer p {
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 0.85rem; /* Decrease font size on very small screens */
+  }
+  p {
+    text-align: justify;
+  }
 }
