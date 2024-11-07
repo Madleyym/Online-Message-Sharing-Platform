@@ -2,62 +2,76 @@
      NIM   : 2203010343
      Kelas : J-22 -->
 
-     <!DOCTYPE html>
-     <html lang="en">
-       <head>
-         <meta charset="UTF-8" />
-         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-         <title>Message</title>
-         <link rel="stylesheet" href="../styles.css" />
-       </head>
-       <body>
-         <header id="Tryandaasu_header">
-           <h1>Message</h1>
-         </header>
-         <nav id="Tryandaasu_nav">
-           <a href="../index.html">Home</a>
-           <a href="/about/about.html">About Us</a>
-           <a href="/contact/contact.html">Contact Us</a>
-           <a href="/message/message.html">Message</a>
-           <a href="/faq/faq.html">FAQ</a>
-           <a href="/terms/terms.html">Terms of Service</a>
-         </nav>
-         <main id="Tryandaasu_main">
-           <section>
-             <h2>Your Messages</h2>
-             <p>
-               Welcome to your message center. Here you can view your messages,
-               manage conversations, and keep track of your correspondence.
-             </p>
-           </section>
-     
-           <section>
-             <h2>Send a Message</h2>
-             <form onsubmit="return showAlert()">
-               <div class="Tryandaasu_form-group">
-                 <label for="Tryandaasu_recipient">Recipient:</label>
-                 <input type="text" id="Tryandaasu_recipient" name="recipient" required />
-               </div>
-     
-               <div class="Tryandaasu_form-group">
-                 <label for="Tryandaasu_subject">Subject:</label>
-                 <input type="text" id="Tryandaasu_subject" name="subject" required />
-               </div>
-     
-               <div class="Tryandaasu_form-group">
-                 <label for="Tryandaasu_message">Message:</label>
-                 <textarea id="Tryandaasu_message" name="message" rows="4" required></textarea>
-               </div>
-     
-               <button type="submit">Send Message</button>
-             </form>
-           </section>
-         </main>
-         <footer id="Tryandaasu_footer">
-           <p>&copy; 2024 Online Message Sharing Platform</p>
-         </footer>
-     
-         <script src="../js/scripts.js"></script>
-       </body>
-     </html>
-     
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header id="Tryandaasu_header">
+      <h1>Message</h1>
+    </header>
+    <nav id="Tryandaasu_nav">
+      <a href="../index.html">Home</a>
+      <a href="/message/message.html">Message</a>
+      <a href="/contact/contact.html">Contact Us</a>
+      <a href="/about/about.html">About Us</a>
+      <a href="/faq/faq.html">FAQ</a>
+      <a href="/terms/terms.html">Terms of Service</a>
+    </nav>
+    <main id="Tryandaasu_main">
+      <section>
+        <h2>Your Messages</h2>
+        <p>
+          Welcome to your message center. Here you can view your messages,
+          manage conversations, and keep track of your correspondence.
+        </p>
+      </section>
+
+      <section>
+        <h2>Send a Message</h2>
+        <form onsubmit="return showAlert()">
+          <div class="Tryandaasu_form-group">
+            <label for="Tryandaasu_recipient">Recipient:</label>
+            <input
+              type="text"
+              id="Tryandaasu_recipient"
+              name="recipient"
+              required
+            />
+          </div>
+
+          <div class="Tryandaasu_form-group">
+            <label for="Tryandaasu_subject">Subject:</label>
+            <input
+              type="text"
+              id="Tryandaasu_subject"
+              name="subject"
+              required
+            />
+          </div>
+
+          <div class="Tryandaasu_form-group">
+            <label for="Tryandaasu_message">Message:</label>
+            <textarea
+              id="Tryandaasu_message"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer id="Tryandaasu_footer">
+      <p>&copy; 2024 Online Message Sharing Platform</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>
