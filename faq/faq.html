@@ -2,65 +2,107 @@
      NIM   : 2203010343
      Kelas : J-22 -->
 
-     <!DOCTYPE html>
-     <html lang="en">
-     <head>
-         <meta charset="UTF-8" />
-         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-         <title>FAQ</title>
-         <link rel="stylesheet" href="../styles.css" />
-     </head>
-     <body>
-         <header id="Tryandaasu_header">
-             <h1>Frequently Asked Questions</h1>
-         </header>
-         <nav id="Tryandaasu_nav">
-             <a href="../index.html">Home</a>
-             <a href="/about/about.html">About Us</a>
-             <a href="/contact/contact.html">Contact Us</a>
-             <a href="/message/message.html">Message</a>
-             <a href="/faq/faq.html">FAQ</a>
-             <a href="/terms/terms.html">Terms of Service</a>
-         </nav>
-         <main id="Tryandaasu_main">
-             <section>
-                 <h2>Common Questions</h2>
-                 <div class="Tryandaasu_faq">
-                     <div class="Tryandaasu_faq-question">What is this platform about?</div>
-                     <div class="Tryandaasu_faq-answer">
-                         This platform is designed for users to share messages easily and effectively.
-                     </div>
-     
-                     <div class="Tryandaasu_faq-question">How can I contact support?</div>
-                     <div class="Tryandaasu_faq-answer">
-                         You can reach our support team through the Contact Us page or email us at support@example.com.
-                     </div>
-     
-                     <div class="Tryandaasu_faq-question">Is my data secure?</div>
-                     <div class="Tryandaasu_faq-answer">
-                         Yes, we take data security very seriously and implement various measures to protect your information.
-                     </div>
-     
-                     <div class="Tryandaasu_faq-question">Can I delete my account?</div>
-                     <div class="Tryandaasu_faq-answer">
-                         Yes, you can delete your account by visiting the Account Settings page.
-                     </div>
-                 </div>
-             </section>
-         </main>
-         <footer id="Tryandaasu_footer">
-             <p>&copy; 2024 Online Message Sharing Platform</p>
-         </footer>
-     
-         <script>
-             // JavaScript for toggling the visibility of FAQ answers
-             document.querySelectorAll('.Tryandaasu_faq-question').forEach(question => {
-                 question.addEventListener('click', () => {
-                     const answer = question.nextElementSibling;
-                     answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-                 });
-             });
-         </script>
-     </body>
-     </html>
-     
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header id="Tryandaasu_header">
+      <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <nav id="Tryandaasu_nav">
+      <a href="../index.html">Home</a>
+      <a href="/message/message.html">Message</a>
+      <a href="/contact/contact.html">Contact Us</a>
+      <a href="/about/about.html">About Us</a>
+      <a href="/faq/faq.html">FAQ</a>
+      <a href="/terms/terms.html">Terms of Service</a>
+    </nav>
+
+    <main id="Tryandaasu_main">
+      <section>
+        <h2>Common Questions</h2>
+        <div class="Tryandaasu_faq">
+          <!-- Question 1 -->
+          <div class="Tryandaasu_faq-item">
+            <div class="Tryandaasu_faq-question">
+              What is this platform for?
+            </div>
+            <div class="Tryandaasu_faq-answer" style="display: none">
+              Our platform allows users to share messages and connect with
+              others securely and conveniently.
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="Tryandaasu_faq-item">
+            <div class="Tryandaasu_faq-question">
+              How can I contact the support team?
+            </div>
+            <div class="Tryandaasu_faq-answer" style="display: none">
+              You can reach support through the <strong>Contact Us</strong> page
+              or by emailing support@example.com. Our team is here to help with
+              any questions.
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="Tryandaasu_faq-item">
+            <div class="Tryandaasu_faq-question">
+              Is my data safe on this platform?
+            </div>
+            <div class="Tryandaasu_faq-answer" style="display: none">
+              Absolutely. We use advanced security protocols to protect your
+              data and ensure that your information remains confidential.
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="Tryandaasu_faq-item">
+            <div class="Tryandaasu_faq-question">
+              How do I delete my account?
+            </div>
+            <div class="Tryandaasu_faq-answer" style="display: none">
+              To delete your account, go to
+              <strong>Account Settings</strong> and follow the prompts. If you
+              need assistance, please reach out to our support team.
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="Tryandaasu_faq-item">
+            <div class="Tryandaasu_faq-question">
+              Is there a cost to use the platform?
+            </div>
+            <div class="Tryandaasu_faq-answer" style="display: none">
+              Our platform is free to use. There may be optional premium
+              features in the future, but the core features will remain free.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="Tryandaasu_footer">
+      <p>&copy; 2024 Online Message Sharing Platform</p>
+    </footer>
+
+    <script>
+      // Toggle visibility of each FAQ answer on question click
+      document
+        .querySelectorAll(".Tryandaasu_faq-question")
+        .forEach((question) => {
+          question.addEventListener("click", () => {
+            const answer = question.nextElementSibling;
+            answer.style.display =
+              answer.style.display === "block" ? "none" : "block";
+          });
+        });
+    </script>
+  </body>
+</html>
