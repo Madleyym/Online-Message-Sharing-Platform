@@ -148,7 +148,6 @@ li {
   gap: 10px;
 }
 
-/* Styling for History Message Button */
 #Tryandaasu_history-section {
   margin-top: 20px;
   text-align: center;
@@ -174,7 +173,15 @@ li {
   background-color: #2e86c1;
 }
 
-/* Styling for Message History Table */
+section {
+  margin: 0 auto; 
+  max-width: 90%; 
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -183,7 +190,7 @@ table {
 
 table th,
 table td {
-  padding: 12px;
+  padding: 12px 15px; /* Adjust padding for better alignment */
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
@@ -191,6 +198,11 @@ table td {
 table th {
   background-color: #2e86c1;
   color: white;
+}
+
+table td {
+  padding: 12px 15px; /* Consistent padding */
+  text-align: left;
 }
 
 table tr:hover {
@@ -213,7 +225,6 @@ table tr:hover {
   color: white;
 }
 
-/* Styling for Delete Button */
 .delete-btn {
   background-color: #f44336;
   color: white;
@@ -237,7 +248,6 @@ table tr:hover {
   outline: none;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
@@ -287,21 +297,32 @@ table tr:hover {
   }
 
   #Tryandaasu_footer {
-    font-size: 0.9rem;
-    text-align: center;
+    font-size: 0.8rem;
+    padding: 0.5rem;
   }
 
-  #Tryandaasu_footer p {
-    text-align: center;
+  #Tryandaasu_nav a {
+    width: 100%;
+    padding: 10px;
   }
 
-  input[type="text"],
-  input[type="email"],
-  textarea {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  table th,
+  table td {
     font-size: 0.85rem;
+    padding: 8px;
   }
 
-  p {
-    text-align: justify;
+  .delete-btn {
+    padding: 5px 8px;
+  }
+
+  .status {
+    font-size: 0.75rem;
   }
 }
