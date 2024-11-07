@@ -148,6 +148,95 @@ li {
   gap: 10px;
 }
 
+/* Styling for History Message Button */
+#Tryandaasu_history-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#Tryandaasu_history-btn {
+  background-color: #2e86c1;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+#Tryandaasu_history-btn i {
+  margin-right: 8px;
+}
+
+#Tryandaasu_history-btn:hover {
+  background-color: #2e86c1;
+}
+
+/* Styling for Message History Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #2e86c1;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.status.sent {
+  background-color: #4caf50;
+  color: white;
+}
+
+.status.pending {
+  background-color: #ff9800;
+  color: white;
+}
+
+/* Styling for Delete Button */
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+.delete-btn i {
+  margin-right: 5px;
+}
+
+.delete-btn:focus {
+  outline: none;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   h1 {
